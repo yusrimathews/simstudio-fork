@@ -123,7 +123,7 @@ const NavLinks = ({
           <SheetClose asChild key='enterprise'>
             <motion.div variants={mobileNavItemVariants}>
               <Link
-                href='https://form.typeform.com/to/jqCO12pF'
+                href='https://tally.so/r/wz842R'
                 target='_blank'
                 rel='noopener noreferrer'
                 className={navItemClass}
@@ -135,7 +135,7 @@ const NavLinks = ({
         ) : (
           <motion.div variants={mobile ? mobileNavItemVariants : undefined} key='enterprise'>
             <Link
-              href='https://form.typeform.com/to/jqCO12pF'
+              href='https://tally.so/r/wz842R'
               target='_blank'
               rel='noopener noreferrer'
               className={navItemClass}
@@ -229,7 +229,7 @@ export default function NavClient({
                   transition={{ duration: 0.3, delay: 0.4 }}
                 >
                   <Link
-                    href='https://form.typeform.com/to/jqCO12pF'
+                    href='https://tally.so/r/wz842R'
                     target='_blank'
                     rel='noopener noreferrer'
                   >

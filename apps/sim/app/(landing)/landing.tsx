@@ -8,7 +8,7 @@ import Testimonials from './components/sections/testimonials'
 
 export default function Landing() {
   const handleOpenTypeformLink = () => {
-    window.open('https://form.typeform.com/to/jqCO12pF', '_blank')
+    window.open('https://tally.so/r/wz842R', '_blank')
   }
 
   return (
