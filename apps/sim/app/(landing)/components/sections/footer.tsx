@@ -88,7 +88,7 @@ function Footer() {
 
               {/* Links section - flex row on mobile, part of flex row in md */}
               <div className='flex w-full flex-row justify-between gap-4 md:w-auto md:justify-start md:gap-16'>
-                <div className='flex flex-col gap-2'>
+                {/* <div className='flex flex-col gap-2'>
                   <Link
                     href={'https://docs.openkernel.ai/'}
                     target='_blank'
@@ -104,7 +104,7 @@ function Footer() {
                   >
                     Contributors
                   </Link>
-                </div>
+                </div> */}
                 <div className='flex flex-col gap-2'>
                   <Link
                     href={'/terms'}
@@ -260,7 +260,7 @@ function Footer() {
 
             {/* Links section - flex row on mobile, part of flex row in md */}
             <div className='flex w-full flex-row justify-between gap-4 md:w-auto md:justify-start md:gap-16'>
-              <motion.div
+              {/* <motion.div
                 className='flex flex-col gap-2'
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -282,7 +282,7 @@ function Footer() {
                 >
                   Contributors
                 </Link>
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 className='flex flex-col gap-2'
                 initial={{ opacity: 0, y: 40 }}
