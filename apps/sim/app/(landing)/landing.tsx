@@ -16,7 +16,7 @@ export default function Landing() {
       <NavWrapper onOpenTypeformLink={handleOpenTypeformLink} />
 
       <Hero />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Features /> */}
       <Integrations />
       {/* <Blogs /> */}
