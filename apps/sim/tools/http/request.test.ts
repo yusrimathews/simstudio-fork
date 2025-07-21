@@ -458,7 +458,7 @@ describe('HTTP Request Tool', () => {
       Object.defineProperty(global, 'window', {
         value: {
           location: {
-            origin: 'https://simstudio.ai',
+            origin: 'https://openkernel.ai',
           },
         },
         writable: true,

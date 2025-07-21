@@ -21,7 +21,7 @@ interface WorkspaceInvitationEmailProps {
   invitationLink?: string
 }
 
-const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://simstudio.ai'
+const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://openkernel.ai'
 
 export const WorkspaceInvitationEmail = ({
   workspaceName = 'Workspace',
@@ -49,7 +49,7 @@ export const WorkspaceInvitationEmail = ({
       <Head />
       <Body style={baseStyles.main}>
         <Preview>
-          You've been invited to join the "{workspaceName}" workspace on Sim Studio!
+          You've been invited to join the "{workspaceName}" workspace on Open Kernel!
         </Preview>
         <Container style={baseStyles.container}>
           <Section style={{ padding: '30px 0', textAlign: 'center' }}>
@@ -58,7 +58,7 @@ export const WorkspaceInvitationEmail = ({
                 <Img
                   src={`${baseUrl}/static/sim.png`}
                   width='114'
-                  alt='Sim Studio'
+                  alt='Open Kernel'
                   style={{
                     margin: '0 auto',
                   }}
@@ -78,10 +78,10 @@ export const WorkspaceInvitationEmail = ({
           <Section style={baseStyles.content}>
             <Text style={baseStyles.paragraph}>Hello,</Text>
             <Text style={baseStyles.paragraph}>
-              {inviterName} has invited you to join the "{workspaceName}" workspace on Sim Studio!
+              {inviterName} has invited you to join the "{workspaceName}" workspace on Open Kernel!
             </Text>
             <Text style={baseStyles.paragraph}>
-              Sim Studio is a powerful platform for building, testing, and optimizing AI workflows.
+              Open Kernel is a powerful platform for building, testing, and optimizing AI workflows.
               Join this workspace to collaborate with your team.
             </Text>
             <Link href={enhancedLink} style={{ textDecoration: 'none' }}>
@@ -94,7 +94,7 @@ export const WorkspaceInvitationEmail = ({
             <Text style={baseStyles.paragraph}>
               Best regards,
               <br />
-              The Sim Studio Team
+              The Open Kernel Team
             </Text>
           </Section>
         </Container>

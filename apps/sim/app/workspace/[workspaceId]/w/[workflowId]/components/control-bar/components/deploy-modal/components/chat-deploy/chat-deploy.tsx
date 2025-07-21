@@ -54,7 +54,7 @@ interface ChatDeployProps {
 type AuthType = 'public' | 'password' | 'email'
 
 const getDomainSuffix = (() => {
-  const suffix = isDev ? `.${getBaseDomain()}` : '.simstudio.ai'
+  const suffix = isDev ? `.${getBaseDomain()}` : '.openkernel.ai'
   return () => suffix
 })()
 
@@ -827,12 +827,12 @@ export function ChatDeploy({
       const port = url.port || (baseDomain.includes(':') ? baseDomain.split(':')[1] : '3000')
       domainSuffix = `.${baseHost}:${port}`
     } else {
-      domainSuffix = '.simstudio.ai'
+      domainSuffix = '.openkernel.ai'
     }
 
     const subdomainPart = isDevelopmentUrl
       ? hostname.split('.')[0]
-      : hostname.split('.simstudio.ai')[0]
+      : hostname.split('.openkernel.ai')[0]
 
     // Success view - simplified with no buttons
     return (
@@ -1306,7 +1306,7 @@ export function ChatDeploy({
             <AlertDialogTitle>Delete Chat?</AlertDialogTitle>
             <AlertDialogDescription>
               This will permanently delete your chat deployment at{' '}
-              <span className='font-mono text-destructive'>{subdomain}.simstudio.ai</span>.
+              <span className='font-mono text-destructive'>{subdomain}.openkernel.ai</span>.
               <p className='mt-2'>
                 All users will lose access immediately, and this action cannot be undone.
               </p>

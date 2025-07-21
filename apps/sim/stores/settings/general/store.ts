@@ -137,7 +137,7 @@ export const useGeneralStore = create<GeneralStore>()(
             if (
               typeof window !== 'undefined' &&
               (window.location.pathname.startsWith('/chat/') ||
-                (window.location.hostname !== 'simstudio.ai' &&
+                (window.location.hostname !== 'openkernel.ai' &&
                   window.location.hostname !== 'localhost' &&
                   window.location.hostname !== '127.0.0.1' &&
                   !window.location.hostname.startsWith('www.')))
@@ -190,7 +190,7 @@ export const useGeneralStore = create<GeneralStore>()(
             if (
               typeof window !== 'undefined' &&
               (window.location.pathname.startsWith('/chat/') ||
-                (window.location.hostname !== 'simstudio.ai' &&
+                (window.location.hostname !== 'openkernel.ai' &&
                   window.location.hostname !== 'localhost' &&
                   window.location.hostname !== '127.0.0.1' &&
                   !window.location.hostname.startsWith('www.')))

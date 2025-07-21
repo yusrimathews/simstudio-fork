@@ -74,18 +74,18 @@ export function getEmailSubject(
 ): string {
   switch (type) {
     case 'sign-in':
-      return 'Sign in to Sim Studio'
+      return 'Sign in to Open Kernel'
     case 'email-verification':
-      return 'Verify your email for Sim Studio'
+      return 'Verify your email for Open Kernel'
     case 'forget-password':
-      return 'Reset your Sim Studio password'
+      return 'Reset your Open Kernel password'
     case 'reset-password':
-      return 'Reset your Sim Studio password'
+      return 'Reset your Open Kernel password'
     case 'invitation':
-      return "You've been invited to join a team on Sim Studio"
+      return "You've been invited to join a team on Open Kernel"
     case 'batch-invitation':
-      return "You've been invited to join a team and workspaces on Sim Studio"
+      return "You've been invited to join a team and workspaces on Open Kernel"
     default:
-      return 'Sim Studio'
+      return 'Open Kernel'
   }
 }

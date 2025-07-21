@@ -350,7 +350,7 @@ export const Copilot = forwardRef<CopilotRef, CopilotProps>(
                   <div className='space-y-2'>
                     <h3 className='font-medium text-lg'>Welcome to Documentation Copilot</h3>
                     <p className='text-muted-foreground text-sm'>
-                      Ask me anything about Sim Studio features, workflows, tools, or how to get
+                      Ask me anything about Open Kernel features, workflows, tools, or how to get
                       started.
                     </p>
                   </div>
@@ -380,7 +380,7 @@ export const Copilot = forwardRef<CopilotRef, CopilotProps>(
             <form onSubmit={handleSubmit} className='flex gap-2'>
               <Input
                 ref={inputRef}
-                placeholder='Ask about Sim Studio documentation...'
+                placeholder='Ask about Open Kernel documentation...'
                 disabled={isSendingMessage}
                 className='flex-1'
                 autoComplete='off'

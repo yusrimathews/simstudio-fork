@@ -143,7 +143,7 @@ describe('Function Execute API Route', () => {
         code: 'return "Email sent to user"',
         params: {
           email: {
-            from: 'Waleed Latif <waleed@simstudio.ai>',
+            from: 'Yusri Mathews <yusri@openkernel.ai>',
             to: 'User <user@example.com>',
           },
         },
@@ -178,7 +178,7 @@ describe('Function Execute API Route', () => {
       const gmailData = {
         email: {
           id: '123',
-          from: 'Waleed Latif <waleed@simstudio.ai>',
+          from: 'Yusri Mathews <yusri@openkernel.ai>',
           to: 'User <user@example.com>',
           subject: 'Test Email',
           bodyText: 'Hello world',
@@ -187,7 +187,7 @@ describe('Function Execute API Route', () => {
           id: '123',
           payload: {
             headers: [
-              { name: 'From', value: 'Waleed Latif <waleed@simstudio.ai>' },
+              { name: 'From', value: 'Yusri Mathews <yusri@openkernel.ai>' },
               { name: 'To', value: 'User <user@example.com>' },
             ],
           },

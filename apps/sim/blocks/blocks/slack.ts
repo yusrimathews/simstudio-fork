@@ -10,7 +10,7 @@ export const SlackBlock: BlockConfig<SlackResponse> = {
   description: 'Send messages to Slack',
   longDescription:
     "Comprehensive Slack integration with OAuth authentication. Send formatted messages using Slack's mrkdwn syntax or Block Kit.",
-  docsLink: 'https://docs.simstudio.ai/tools/slack',
+  docsLink: 'https://docs.openkernel.ai/tools/slack',
   category: 'tools',
   bgColor: '#611f69',
   icon: SlackIcon,
@@ -29,7 +29,7 @@ export const SlackBlock: BlockConfig<SlackResponse> = {
       type: 'dropdown',
       layout: 'full',
       options: [
-        { label: 'Sim Studio Bot', id: 'oauth' },
+        { label: 'Open Kernel Bot', id: 'oauth' },
         { label: 'Custom Bot', id: 'bot_token' },
       ],
       value: () => 'oauth',
@@ -112,7 +112,7 @@ export const SlackBlock: BlockConfig<SlackResponse> = {
         } else {
           // Default to OAuth
           if (!credential) {
-            throw new Error('Slack account credential is required when using Sim Studio Bot')
+            throw new Error('Slack account credential is required when using Open Kernel Bot')
           }
           baseParams.credential = credential
         }
