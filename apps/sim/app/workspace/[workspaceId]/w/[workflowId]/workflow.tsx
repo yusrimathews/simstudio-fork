@@ -1525,7 +1525,8 @@ const WorkflowContent = React.memo(() => {
           onDrop={userPermissions.canEdit ? onDrop : undefined}
           onDragOver={userPermissions.canEdit ? onDragOver : undefined}
           fitView
-          minZoom={0.1}
+          fitViewOptions={{ maxZoom: 0.9 }}
+          minZoom={0.3}
           maxZoom={1.3}
           panOnScroll
           defaultEdgeOptions={{ type: 'custom' }}
