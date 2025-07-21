@@ -105,7 +105,7 @@ export const metadata: Metadata = {
     siteName: 'Open Kernel',
     images: [
       {
-        url: 'https://simstudio.ai/social/facebook.png',
+        url: 'https://openkernel.ai/social/pill.png',
         width: 1200,
         height: 630,
         alt: 'Open Kernel',
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
     title: 'Open Kernel',
     description:
       'Build and deploy AI agents using our Figma-like canvas. Build, write evals, and deploy AI agent workflows that automate workflows and streamline your business processes.',
-    images: ['https://simstudio.ai/social/twitter.png'],
+    images: ['https://openkernel.ai/social/pill.png'],
     creator: '',
     site: '',
   },
@@ -136,7 +136,7 @@ export const metadata: Metadata = {
         sizes: '512x512',
         type: 'image/png',
       },
-      { url: '/sim.png', sizes: 'any', type: 'image/png' },
+      { url: '/static/ok.png', sizes: 'any', type: 'image/png' },
     ],
     apple: '/favicon/apple-touch-icon.png',
     shortcut: '/favicon/favicon.ico',
@@ -218,7 +218,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name='twitter:domain' content='openkernel.ai' />
 
         {/* Additional image sources */}
-        <link rel='image_src' href='https://simstudio.ai/social/facebook.png' />
+        <link rel='image_src' href='https://openkernel.ai/social/pill.png' />
 
         <PublicEnvScript />
       </head>

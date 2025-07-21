@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { ChevronDown, Lock, LogOut, User, UserPlus } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-import { AgentIcon } from '@/components/icons'
+import { AgentIcon, OKIcon } from '@/components/icons'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import {
   DropdownMenu,
@@ -232,11 +232,11 @@ export function Account({ onOpenChange }: AccountProps) {
                     <div className='relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-blue-500'>
                       {userData.isLoggedIn ? (
                         <div className='flex h-full w-full items-center justify-center bg-[#802FFF]'>
-                          <AgentIcon className='-translate-y-[0.5px] text-white transition-transform duration-200 group-hover:scale-110' />
+                          <OKIcon className='-translate-y-[0.5px] text-white transition-transform duration-200 group-hover:scale-110' />
                         </div>
                       ) : (
                         <div className='flex h-full w-full items-center justify-center bg-gray-500'>
-                          <AgentIcon className='text-white transition-transform duration-200 group-hover:scale-110' />
+                          <OKIcon className='text-white transition-transform duration-200 group-hover:scale-110' />
                         </div>
                       )}
                       {userData.isLoggedIn && accounts.length > 1 && (

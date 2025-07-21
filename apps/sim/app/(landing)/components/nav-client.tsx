@@ -199,7 +199,7 @@ export default function NavClient({
           <div className='flex flex-1 items-center'>
             <div className='inline-block'>
               <Link href='/' className='inline-flex'>
-                <Image src='/sim.svg' alt='Sim Logo' width={42} height={42} />
+                <Image src='/ok.svg' alt='Open Kernel Logo' width={42} height={42} />
               </Link>
             </div>
           </div>

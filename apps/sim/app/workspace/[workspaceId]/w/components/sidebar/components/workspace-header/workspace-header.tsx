@@ -3,7 +3,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ChevronDown, ChevronUp, PanelLeft } from 'lucide-react'
 import Link from 'next/link'
-import { AgentIcon } from '@/components/icons'
+import { AgentIcon, OKIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
@@ -147,7 +147,7 @@ export const WorkspaceHeader = React.memo<WorkspaceHeaderProps>(
       <>
         {/* Icon */}
         <div className='flex h-6 w-6 shrink-0 items-center justify-center rounded bg-[#802FFF]'>
-          <AgentIcon className='h-4 w-4 text-white' />
+          <OKIcon className='h-4 w-4 text-white' />
         </div>
 
         {/* Loading workspace name and chevron container */}
@@ -193,7 +193,7 @@ export const WorkspaceHeader = React.memo<WorkspaceHeaderProps>(
           href={workspaceUrl}
           className='group flex h-6 w-6 shrink-0 items-center justify-center rounded bg-[#802FFF]'
         >
-          <AgentIcon className='h-4 w-4 text-white transition-all group-hover:scale-105' />
+          <OKIcon className='h-4 w-4 text-white transition-all group-hover:scale-105' />
         </Link>
 
         {/* Workspace Name and Chevron Container */}
