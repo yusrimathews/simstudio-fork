@@ -195,7 +195,7 @@ export default function NavClient({
   return (
     <nav className='absolute top-1 right-0 left-0 z-30 px-4 py-8'>
       <div className='relative mx-auto flex max-w-7xl items-center justify-between'>
-        {!isMobile && (
+        {/* {!isMobile && ( */}
           <div className='flex flex-1 items-center'>
             <div className='inline-block'>
               <Link href='/' className='inline-flex'>
@@ -203,9 +203,9 @@ export default function NavClient({
               </Link>
             </div>
           </div>
-        )}
+        {/* )} */}
 
-        {!isMobile && (
+        {/* {!isMobile && (
           <motion.div
             className='flex items-center gap-4 rounded-lg bg-neutral-700/50 px-2 py-1'
             variants={desktopNavContainerVariants}
@@ -216,13 +216,13 @@ export default function NavClient({
             <NavLinks currentPath={currentPath} onContactClick={onContactClick} />
           </motion.div>
         )}
-        {isMobile && <div className='flex-1' />}
+        {isMobile && <div className='flex-1' />} */}
 
         <div className='flex flex-1 items-center justify-end'>
           <div className={`flex items-center ${isMobile ? 'gap-2' : 'gap-3'}`}>
-            {!isMobile && (
+            {/* {!isMobile && ( */}
               <>
-                <div className='flex items-center'>{children}</div>
+                {/* <div className='flex items-center'>{children}</div> */}
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -239,9 +239,9 @@ export default function NavClient({
                   </Link>
                 </motion.div>
               </>
-            )}
+            {/* )} */}
 
-            {isMobile && (
+            {/* {isMobile && (
               <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                 <SheetTrigger asChild>
                   <motion.button
@@ -311,7 +311,7 @@ export default function NavClient({
                   )}
                 </AnimatePresence>
               </Sheet>
-            )}
+            )} */}
           </div>
         </div>
       </div>
