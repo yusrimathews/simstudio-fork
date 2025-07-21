@@ -407,6 +407,8 @@ function SignupFormContent({
 
       <div className='flex flex-col gap-6'>
         <div className='rounded-xl border border-neutral-700/40 bg-neutral-800/50 p-6 backdrop-blur-sm'>
+          { googleAvailable || githubAvailable && (
+            <>
           <SocialLoginButtons
             githubAvailable={githubAvailable}
             googleAvailable={googleAvailable}
@@ -419,6 +421,8 @@ function SignupFormContent({
               <div className='w-full border-neutral-700/50 border-t' />
             </div>
           </div>
+            </>
+          )}
 
           <form onSubmit={onSubmit} className='space-y-5'>
             <div className='space-y-4'>

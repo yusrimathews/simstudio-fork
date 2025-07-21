@@ -137,7 +137,8 @@ export const auth = betterAuth({
       ],
     },
   },
-  socialProviders: {
+  socialProviders: Object.fromEntries(
+    Object.entries({
     github: {
       clientId: env.GITHUB_CLIENT_ID as string,
       clientSecret: env.GITHUB_CLIENT_SECRET as string,
@@ -151,7 +152,8 @@ export const auth = betterAuth({
         'https://www.googleapis.com/auth/userinfo.profile',
       ],
     },
-  },
+    }).filter(([social, provider]) => provider.clientId && provider.clientSecret)
+  ),
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: false,
