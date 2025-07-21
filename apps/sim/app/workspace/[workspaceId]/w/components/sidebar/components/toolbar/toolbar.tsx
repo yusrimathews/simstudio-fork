@@ -108,29 +108,50 @@ export function Toolbar({ userPermissions, isWorkspaceSelectorVisible = false }:
       <ScrollArea className='flex-1 px-2' hideScrollbar={true}>
         <div className='space-y-1 pb-2'>
           {/* Regular Blocks Section */}
-          {regularBlocks.map((block) => (
-            <ToolbarBlock
-              key={block.type}
-              config={block.config}
-              disabled={!userPermissions.canEdit}
-            />
-          ))}
+          {regularBlocks.length > 0 && (
+            <div>
+              <div className='text-xs font-semibold text-muted-foreground px-2 my-2'>Regular</div>
+              <div>
+                {regularBlocks.map((block) => (
+                  <ToolbarBlock
+                    key={block.type}
+                    config={block.config}
+                    disabled={!userPermissions.canEdit}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Special Blocks Section (Loop & Parallel) */}
-          {specialBlocks.map((block) => {
-            if (block.type === 'loop') {
-              return <LoopToolbarItem key={block.type} disabled={!userPermissions.canEdit} />
-            }
-            if (block.type === 'parallel') {
-              return <ParallelToolbarItem key={block.type} disabled={!userPermissions.canEdit} />
-            }
-            return null
-          })}
+          {specialBlocks.length > 0 && (
+            <div>
+              <div className='text-xs font-semibold text-muted-foreground px-2 my-2'>Special</div>
+              <div>
+                {specialBlocks.map((block) => {
+                  if (block.type === 'loop') {
+                    return <LoopToolbarItem key={block.type} disabled={!userPermissions.canEdit} />
+                  }
+                  if (block.type === 'parallel') {
+                    return <ParallelToolbarItem key={block.type} disabled={!userPermissions.canEdit} />
+                  }
+                  return null
+                })}
+              </div>
+            </div>
+          )}
 
           {/* Tools Section */}
-          {tools.map((tool) => (
-            <ToolbarBlock key={tool.type} config={tool} disabled={!userPermissions.canEdit} />
-          ))}
+          {tools.length > 0 && (
+            <div>
+              <div className='text-xs font-semibold text-muted-foreground px-2 my-2'>Tools</div>
+              <div>
+                {tools.map((tool) => (
+                  <ToolbarBlock key={tool.type} config={tool} disabled={!userPermissions.canEdit} />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </ScrollArea>
     </div>
