@@ -29,6 +29,7 @@ interface Workspace {
 interface WorkspaceHeaderProps {
   onCreateWorkflow: () => void
   isWorkspaceSelectorVisible: boolean
+  isSidebarCollapsed: boolean
   onToggleWorkspaceSelector: () => void
   onToggleSidebar: () => void
   activeWorkspace: Workspace | null
@@ -43,6 +44,7 @@ export const WorkspaceHeader = React.memo<WorkspaceHeaderProps>(
   ({
     onCreateWorkflow,
     isWorkspaceSelectorVisible,
+    isSidebarCollapsed,
     onToggleWorkspaceSelector,
     onToggleSidebar,
     activeWorkspace,
@@ -240,7 +242,7 @@ export const WorkspaceHeader = React.memo<WorkspaceHeaderProps>(
           </div>
 
           {/* Chevron - Next to name, hidden in edit mode */}
-          {!isEditingName && (
+          {!isEditingName && !isSidebarCollapsed && (
             <Button
               variant='ghost'
               size='icon'

@@ -732,6 +732,7 @@ export function Sidebar() {
               activeWorkspace={activeWorkspace}
               isWorkspacesLoading={isWorkspacesLoading}
               updateWorkspaceName={updateWorkspaceName}
+              isSidebarCollapsed={isSidebarCollapsed}
             />
           </div>
 
