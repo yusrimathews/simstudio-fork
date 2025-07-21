@@ -32,7 +32,7 @@ export function ChatHeader({ chatConfig, starCount }: ChatHeaderProps) {
         </h2>
       </div>
       <div className='flex items-center gap-2'>
-        <a
+        {/* <a
           href='https://github.com/simstudioai/sim'
           className='flex items-center gap-1 text-foreground'
           aria-label='GitHub'
@@ -41,7 +41,7 @@ export function ChatHeader({ chatConfig, starCount }: ChatHeaderProps) {
         >
           <GithubIcon className='h-[18px] w-[18px]' />
           <span className='hidden font-medium text-xs sm:inline-block'>{starCount}</span>
-        </a>
+        </a> */}
         <a
           href='https://openkernel.ai'
           target='_blank'

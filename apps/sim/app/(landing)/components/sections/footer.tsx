@@ -69,7 +69,7 @@ function Footer() {
             {/* Right side content */}
             <div className='relative mt-8 flex w-full flex-col gap-6 md:mt-0 md:w-auto md:flex-row md:items-end md:justify-end md:gap-16'>
               {/* See repo button positioned absolutely to align with the top text - desktop only */}
-              <div className='absolute top-0 right-0 hidden md:block'>
+              {/* <div className='absolute top-0 right-0 hidden md:block'>
                 <Link
                   href='https://github.com/simstudioai/sim'
                   target='_blank'
@@ -84,7 +84,7 @@ function Footer() {
                     See repo
                   </Button>
                 </Link>
-              </div>
+              </div> */}
 
               {/* Links section - flex row on mobile, part of flex row in md */}
               <div className='flex w-full flex-row justify-between gap-4 md:w-auto md:justify-start md:gap-16'>
@@ -126,7 +126,7 @@ function Footer() {
               </div>
 
               {/* Social icons */}
-              <div className='mt-4 flex items-center md:mt-0 md:justify-end'>
+              {/* <div className='mt-4 flex items-center md:mt-0 md:justify-end'>
                 <div className='flex gap-4'>
                   <Link
                     href={'https://github.com/simstudioai/sim'}
@@ -167,7 +167,7 @@ function Footer() {
                     <XIcon className='h-9 w-9 text-[#9E91AA] transition-all duration-500 hover:text-[#bdaecb] md:h-10 md:w-10' />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@ function Footer() {
             transition={{ duration: 0.7, delay: 0.28, ease: 'easeOut' }}
           >
             {/* See repo button positioned absolutely to align with the top text - desktop only */}
-            <motion.div
+            {/* <motion.div
               className='absolute top-0 right-0 hidden md:block'
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -256,7 +256,7 @@ function Footer() {
                   See repo
                 </Button>
               </Link>
-            </motion.div>
+            </motion.div> */}
 
             {/* Links section - flex row on mobile, part of flex row in md */}
             <div className='flex w-full flex-row justify-between gap-4 md:w-auto md:justify-start md:gap-16'>
@@ -310,7 +310,7 @@ function Footer() {
             </div>
 
             {/* Social icons */}
-            <motion.div
+            {/* <motion.div
               className='mt-4 flex items-center md:mt-0 md:justify-end'
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -357,7 +357,7 @@ function Footer() {
                   <XIcon className='h-9 w-9 text-[#9E91AA] transition-all duration-500 hover:text-[#bdaecb] md:h-10 md:w-10' />
                 </Link>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </motion.div>
       </motion.div>
