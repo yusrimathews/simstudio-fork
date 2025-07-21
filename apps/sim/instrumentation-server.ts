@@ -28,7 +28,7 @@ const DEFAULT_TELEMETRY_CONFIG = {
 // Initialize OpenTelemetry
 async function initializeOpenTelemetry() {
   try {
-    if (env.NEXT_TELEMETRY_DISABLED === '1') {
+    if (env.NEXT_PUBLIC_TELEMETRY_DISABLED === '1') {
       logger.info('OpenTelemetry telemetry disabled via environment variable')
       return
     }

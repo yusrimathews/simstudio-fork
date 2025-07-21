@@ -5,7 +5,7 @@
  * - Telemetry is enabled by default to help us improve the product
  * - You can disable telemetry via:
  *   1. Settings UI > Privacy tab > Toggle off "Allow anonymous telemetry"
- *   2. Setting NEXT_TELEMETRY_DISABLED=1 environment variable
+ *   2. Setting NEXT_PUBLIC_TELEMETRY_DISABLED=1 environment variable
  *
  * This file allows you to configure telemetry collection for your
  * Sim Studio instance. If you've forked the repository, you can modify

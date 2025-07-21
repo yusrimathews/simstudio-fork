@@ -14,6 +14,7 @@ import { Button } from '@/components/ui/button'
 import { isDev } from '@/lib/environment'
 import { createLogger } from '@/lib/logs/console-logger'
 import { useGeneralStore } from '@/stores/settings/general/store'
+import { env } from '@/lib/env'
 
 declare global {
   interface Window {
@@ -41,6 +42,8 @@ const trackEvent = (eventName: string, properties?: Record<string, any>) => {
 }
 
 export function TelemetryConsentDialog() {
+  if (env.NEXT_PUBLIC_TELEMETRY_DISABLED === '1') return
+
   const [open, setOpen] = useState(false)
   const [settingsLoaded, setSettingsLoaded] = useState(false)
   const telemetryEnabled = useGeneralStore((state) => state.telemetryEnabled)

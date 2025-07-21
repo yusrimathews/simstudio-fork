@@ -35,7 +35,7 @@ RUN bun install --omit dev --ignore-scripts
 WORKDIR /app/apps/sim
 RUN bun install sharp
 
-ENV NEXT_TELEMETRY_DISABLED=1 \
+ENV NEXT_PUBLIC_TELEMETRY_DISABLED=1 \
     VERCEL_TELEMETRY_DISABLED=1 \
     DOCKER_BUILD=1
 

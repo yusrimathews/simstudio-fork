@@ -8,11 +8,14 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { Switch } from '@/components/ui/switch'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { useGeneralStore } from '@/stores/settings/general/store'
+import { env } from '@/lib/env'
 
 const TOOLTIPS = {
   telemetry:
     'We collect anonymous data about feature usage, performance, and errors to improve the application.',
 }
+
+const isTelemetryGloballyDisabled = env.NEXT_PUBLIC_TELEMETRY_DISABLED === '1'
 
 export function Privacy() {
   const isLoading = useGeneralStore((state) => state.isLoading)
@@ -80,7 +83,7 @@ export function Privacy() {
                 id='telemetry'
                 checked={telemetryEnabled}
                 onCheckedChange={handleTelemetryToggle}
-                disabled={isLoading}
+                disabled={isLoading || isTelemetryGloballyDisabled}
               />
             </div>
           )}

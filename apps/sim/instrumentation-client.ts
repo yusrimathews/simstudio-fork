@@ -48,7 +48,7 @@ if (typeof window !== 'undefined') {
   let telemetryEnabled = true
 
   try {
-    if (env.NEXT_TELEMETRY_DISABLED === '1') {
+    if (env.NEXT_PUBLIC_TELEMETRY_DISABLED === '1') {
       telemetryEnabled = false
     } else {
       const storedPreference = localStorage.getItem(TELEMETRY_STATUS_KEY)

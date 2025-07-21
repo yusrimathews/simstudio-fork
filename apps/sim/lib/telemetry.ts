@@ -50,7 +50,7 @@ export function getTelemetryStatus(): TelemetryStatus {
   }
 
   try {
-    if (env.NEXT_TELEMETRY_DISABLED === '1') {
+    if (env.NEXT_PUBLIC_TELEMETRY_DISABLED === '1') {
       return { enabled: false, notifiedUser: true }
     }
 
@@ -106,7 +106,7 @@ export function disableTelemetry(): void {
  * Enables telemetry
  */
 export function enableTelemetry(): void {
-  if (env.NEXT_TELEMETRY_DISABLED === '1') {
+  if (env.NEXT_PUBLIC_TELEMETRY_DISABLED === '1') {
     logger.info('Telemetry disabled by environment variable, cannot enable')
     return
   }

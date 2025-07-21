@@ -122,7 +122,7 @@ export const env = createEnv({
   // Variables available on both server and client
   shared: {
     NODE_ENV: z.enum(['development', 'test', 'production']).optional(),
-    NEXT_TELEMETRY_DISABLED: z.string().optional(),
+    NEXT_PUBLIC_TELEMETRY_DISABLED: z.string().optional(),
   },
 
   experimental__runtimeEnv: {
@@ -134,7 +134,7 @@ export const env = createEnv({
     NEXT_PUBLIC_GOOGLE_PROJECT_NUMBER: process.env.NEXT_PUBLIC_GOOGLE_PROJECT_NUMBER,
     NEXT_PUBLIC_SOCKET_URL: process.env.NEXT_PUBLIC_SOCKET_URL,
     NODE_ENV: process.env.NODE_ENV,
-    NEXT_TELEMETRY_DISABLED: process.env.NEXT_TELEMETRY_DISABLED,
+    NEXT_PUBLIC_TELEMETRY_DISABLED: process.env.NEXT_PUBLIC_TELEMETRY_DISABLED,
   },
 })
 
